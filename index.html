@@ -161,6 +161,9 @@ $conf['redis_client_interface'] = 'PhpRedis';
 $conf['cache_backends'][] = 'sites/all/modules/redis/redis.autoload.inc';
 $conf['cache_default_class'] = 'Redis_Cache';
 $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+
+$conf['lock_inc'] = 'sites/all/modules/redis/redis.lock.inc';
+$conf['path_inc'] = 'sites/all/modules/redis/redis.path.inc';
                         </code></pre>
                     </section>
 
@@ -251,8 +254,25 @@ commerce_cart_add_to_cart_form_*
                 </section>
 
                 <section>
-                    <h2>Live Demo</h2>
-                    <p><em>What could go wrong?</em></p>
+                    <section>
+                        <h2>Live Demo</h2>
+                        <p><em>What could go wrong?</em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Network Analysis</h2>
+                        <img data-src="images/network_without-cache.png" />
+                    </section>
+                    
+                    <section>
+                        <img data-src="images/network_with-cache.png" />
+                    </section>
+                    
+                    <section>
+                        <h2>Blackfire Analysis</h2>
+                        <img data-src="images/blackfire_without-cache.png" />
+                        <img data-src="images/blackfire_with-cache.png" />
+                    </section>
                 </section>
 
                 <section>
