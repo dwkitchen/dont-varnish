@@ -48,16 +48,38 @@
 					</p>
 				</section>
 
+                <section>
+                    <h2>Not Going to Look At</h2>
+                    <ul>
+                        <li>Stack Options</li>
+                        <li>Database Settings Tuning</li>
+                        <li>Content Delivery Networks</li>
+                    </ul>
+                </section>
+
 				<section>
-					<h2>Caching</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+                    <section>
+                        <h2>Caching</h2>
+                        <img data-src="images/cache-the-things.jpg" />
+                    </section>
                     <section>
                         <h2>Type</h2>
+                        <ul>
+                            <li>By Role</li>
+                            <li>By User</li>
+                            <li>By Page</li>
+                            <li>Anything else</li>
+                        </ul>
                     </section>
                     <section>
                         <h2>Time</h2>
+                        <ul>
+                            <li>1 second</li>
+                            <li>1 minute</li>
+                            <li>1 hour</li>
+                            <li>1 day</li>
+                            <li>1 week</li>
+                        </ul>
                     </section>
 				</section>
 
@@ -69,16 +91,18 @@
 					</section>
 					<section>
 						<h2>Entity Cache</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<img data-src="images/entitycache.png" />
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+
+                    <section>
+                        <h2>Commerce Entity Cache</h2>
+                        <img data-src="images/commerce_entitycache.png" />
+                    </section>
+
+                    <section>
+                        <h2>Render Cache</h2>
+                        <img data-src="images/render_cache.png" />
+                    </section>
 				</section>
 
 				<section>
@@ -100,6 +124,13 @@
                         <h2>Panels</h2>
                     </section>
 
+                    <section>
+                        <h2>Time Cache</h2>
+                        <img data-src="images/panels_time-cache.png" />
+                        <aside class="notes">
+                            <p>Nids vs Content - Football scores view</p>
+                        </aside>
+                    </section>
 
                 </section>
 
@@ -108,6 +139,20 @@
                         <h2>Redis/Memcache</h2>
                     </section>
 
+                    <section>
+                        <h2>Redis</h2>
+                        <img data-src="images/redis.png" />
+                    </section>
+
+                    <section>
+                        <h2>Library</h2>
+                        <dl>
+                            <dt>PhpRedis</dt>
+                            <dd>Redis cache backend using the well performing <a href="https://github.com/phpredis/phpredis" >PhpRedis</a> PHP extension.</dd>
+                            <dt>Predis</dt>
+                            <dd>Redis cache backend using the standalone <a href="https://github.com/nrk/predis">Predis</a> PHP library.</dd>
+                        </dl>
+                    </section>
                     <section>
                         <h2>settings.php</h2>
                         <pre><code class="php" data-trim contenteditable>
@@ -127,6 +172,9 @@ $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
 
                     </section>
                     <section>
+                        <img data-src="images/authcache.png" />
+                    </section>
+                    <section>
                         <h2>settings.php</h2>
                         <pre><code class="php" data-trim contenteditable>
 $conf['cache_backends'][] = 'sites/all/modules/authcache/authcache.cache.inc';
@@ -138,8 +186,13 @@ $conf['page_cache_maximum_age'] = 600;
                         </code></pre>
                     </section>
                     <section>
-                        <h2>Personalisation</h2>
+                        <h2>Blocks</h2>
                         <img data-src="images/authcache_block.png" />
+                    </section>
+
+                    <section>
+                        <h2>Menu</h2>
+                        <img data-src="images/authcache_menu.png" />
                     </section>
 
                     <section>
@@ -200,6 +253,32 @@ commerce_cart_add_to_cart_form_*
                 <section>
                     <h2>Live Demo</h2>
                     <p><em>What could go wrong?</em></p>
+                </section>
+
+                <section>
+                    <h2>Drupal 8</h2>
+                    <p>All of this is built in using </p>
+                    <ul>
+                        <li><a href="https://events.drupal.org/barcelona2015/sessions/making-drupal-fly-fastest-drupal-ever-here">Making Drupal fly - The fastest Drupal ever is here!</a></li>
+                        <li><a href="https://events.drupal.org/barcelona2015/sessions/caching-edge-cdns-everyone">Caching at the Edge: CDNs for everyone</a></li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>Questions</h2>
+                </section>
+
+                <section>
+                    <h2>More Information</h2>
+                    <dl>
+                        <dt>Presentation</dt>
+                        <dd><a href="https://github.com/dwkitchen/dont-varnish">https://github.com/dwkitchen/dont-varnish</a></dd>
+                        <dt>Site Repo</dt>
+                        <dd><a href="https://bitbucket.org/dwkitchen/dont_varnish">https://bitbucket.org/dwkitchen/dont_varnish</a></dd>
+                        <dt>Enterprise for Everyone Distribution</dt>
+                        <dd><a href="https://www.drupal.org/project/ee" >https://www.drupal.org/project/ee</a></dd>
+                    </dl>
                 </section>
 
             </div>
